@@ -7,8 +7,8 @@
 
 ## Quick Start
 * Clone or download this repository
-* Go inside of directory,  `cd compose-postgres`
-* Run this command `docker-compose up -d`
+* Перейти внутрь директории `cd compose-postgres`
+* Запустить команду `docker-compose up -d`
 
 
 ## Environments
