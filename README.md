@@ -1,17 +1,17 @@
 # Postgresql & PgAdmin powered by compose
 
 
-## Requirements:
+## Зависимости:
 * docker >= 17.12.0+
 * docker-compose
 
-## Quick Start
-* Clone or download this repository
+## Быстрый старт
+* Выполнить клонирование и загрузку репозитория
 * Перейти внутрь директории `cd compose-postgres`
 * Запустить команду `docker-compose up -d`
 
 
-## Environments
+## Переменные среды
 This Compose file contains the following environment variables:
 
 * `POSTGRES_USER` the default value is **postgres**
@@ -20,23 +20,23 @@ This Compose file contains the following environment variables:
 * `PGADMIN_DEFAULT_EMAIL` the default value is **pgadmin4@pgadmin.org**
 * `PGADMIN_DEFAULT_PASSWORD` the default value is **admin**
 
-## Access to postgres: 
+## Доступ к postgres: 
 * `localhost:5432`
 * **Username:** postgres (as a default)
 * **Password:** changeme (as a default)
 
-## Access to PgAdmin: 
+## Доступ к PgAdmin: 
 * **URL:** `http://localhost:5050`
 * **Username:** pgadmin4@pgadmin.org (as a default)
 * **Password:** admin (as a default)
 
-## Add a new server in PgAdmin:
+## Добавить новый сервер в PgAdmin:
 * **Host name/address** `postgres`
 * **Port** `5432`
 * **Username** as `POSTGRES_USER`, by default: `postgres`
 * **Password** as `POSTGRES_PASSWORD`, by default `changeme`
 
-## Logging
+## Логгирование
 
 There are no easy way to configure pgadmin log verbosity and it can be overwhelming at times. It is possible to disable pgadmin logging on the container level.
 
